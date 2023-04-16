@@ -12,13 +12,15 @@ class SearchViewController: UIViewController,UITableViewDataSource, UISearchBarD
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
     
-    let data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
-            "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
-            "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
-            "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
-            "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
+//    let data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
+//            "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
+//            "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
+//            "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
+//            "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
     
-    var filteredData: [String]!
+    let data: [String]! = nil
+    
+    var filteredData: [String]! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,10 @@ class SearchViewController: UIViewController,UITableViewDataSource, UISearchBarD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredData.count
+        if (filteredData == nil) {
+            return 0
+        }
+        return filteredData!.count
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQE-KM-wr2">
-                                <rect key="frame" x="-2" y="74" width="395" height="44"/>
+                                <rect key="frame" x="-7" y="74" width="395" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -56,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXe-Uw-cLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1993.1297709923663" y="198.59154929577466"/>
+            <point key="canvasLocation" x="-2010" y="199"/>
         </scene>
         <!--Browse-->
         <scene sceneID="tne-QT-ifu">
@@ -66,32 +67,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My Meal text" translatesAutoresizingMaskIntoConstraints="NO" id="L5E-tp-N3X">
-                                <rect key="frame" x="16" y="59" width="360" height="55"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My Meal text" translatesAutoresizingMaskIntoConstraints="NO" id="ZoS-pu-Vgh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1SX-jA-JeX"/>
+                                </constraints>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RB-ow-zEb">
-                                <rect key="frame" x="-2" y="131" width="394" height="624"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Xe-uC-B8r">
-                                        <rect key="frame" x="7" y="8" width="378" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="7Ow-UC-bev"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Qka-jO-ujW"/>
-                            </scrollView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-Pb-eF4">
+                                <rect key="frame" x="16" y="117" width="361" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="86C-Vr-BY9">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Category" id="3Db-VO-eMZ" customClass="CategoryCell" customModule="MyMeal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ttp-dz-auC">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iez-NQ-FX8">
+                                                    <rect key="frame" x="2" y="75" width="96" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My Meal" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-38-lbM">
+                                                    <rect key="frame" x="8" y="8" width="84" height="62"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iez-NQ-FX8" firstAttribute="leading" secondItem="Ttp-dz-auC" secondAttribute="leading" constant="2" id="UUn-b8-AKW"/>
+                                                <constraint firstAttribute="bottom" secondItem="iez-NQ-FX8" secondAttribute="bottom" constant="4" id="VGA-53-aEz"/>
+                                                <constraint firstAttribute="trailing" secondItem="iez-NQ-FX8" secondAttribute="trailing" constant="2" id="nrl-uT-WIP"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="image" destination="sEf-38-lbM" id="nWk-hG-lwL"/>
+                                            <outlet property="label" destination="iez-NQ-FX8" id="Y56-zu-oUm"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Vqq-dM-S3U"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="MYo-SL-tK8"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99323588610000002" green="0.94851201770000004" blue="0.84144693609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZoS-pu-Vgh" secondAttribute="trailing" id="Ce0-FP-hJ8"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cum-YG-kp1"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MjP-6V-2sp"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qK0-x2-gHY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Browse" id="6aQ-oz-PD7">
                         <imageReference key="image" image="network" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="categoriesCollectionView" destination="Bg2-Pb-eF4" id="x1w-Rh-iLE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +151,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDp-6e-0pF">
-                                <rect key="frame" x="-3" y="59" width="395" height="44"/>
+                                <rect key="frame" x="-9" y="59" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Saved Recipes" largeTitleDisplayMode="always" id="n3b-J2-53l"/>
@@ -115,10 +160,6 @@
                                     <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </navigationBarAppearance>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qLu-WT-NVj">
-                                <rect key="frame" x="-3" y="103" width="395" height="251"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rn9-oX-Yc5"/>
                         <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -155,6 +196,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="My Meal" width="500" height="500"/>
         <image name="My Meal text" width="440" height="106"/>
         <image name="bookmark.fill" catalog="system" width="110" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
