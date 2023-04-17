@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQE-KM-wr2">
-                                <rect key="frame" x="-7" y="74" width="395" height="44"/>
+                                <rect key="frame" x="-8" y="74" width="395" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -113,12 +113,76 @@
                                         <connections>
                                             <outlet property="image" destination="sEf-38-lbM" id="nWk-hG-lwL"/>
                                             <outlet property="label" destination="iez-NQ-FX8" id="Y56-zu-oUm"/>
+                                            <outlet property="uiView" destination="Ttp-dz-auC" id="Il1-zo-G4d"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Vqq-dM-S3U"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="MYo-SL-tK8"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beef" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZgZ-AV-W4g">
+                                <rect key="frame" x="16" y="225" width="361" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-eE-aX3">
+                                <rect key="frame" x="16" y="290" width="361" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z6f-YU-sIg">
+                                    <size key="itemSize" width="160" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Meal" id="4Im-Ie-lJ0" customClass="MealCell" customModule="MyMeal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4HZ-Ze-Pxy">
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My Meal" translatesAutoresizingMaskIntoConstraints="NO" id="WYD-iI-SUB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="3BE-Uv-pYQ"/>
+                                                        <constraint firstAttribute="height" constant="160" id="NTP-DM-su5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwK-N3-Oov">
+                                                    <rect key="frame" x="4" y="164" width="152" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="jwK-N3-Oov" secondAttribute="trailing" constant="4" id="6Sc-XQ-p8l"/>
+                                                <constraint firstItem="WYD-iI-SUB" firstAttribute="top" secondItem="4HZ-Ze-Pxy" secondAttribute="top" id="R8o-l0-STs"/>
+                                                <constraint firstItem="WYD-iI-SUB" firstAttribute="leading" secondItem="4HZ-Ze-Pxy" secondAttribute="leading" id="RUd-x9-0VW"/>
+                                                <constraint firstAttribute="bottom" secondItem="jwK-N3-Oov" secondAttribute="bottom" constant="4" id="aHg-Vt-N4G"/>
+                                                <constraint firstItem="jwK-N3-Oov" firstAttribute="leading" secondItem="4HZ-Ze-Pxy" secondAttribute="leading" constant="4" id="b8k-kr-bVQ"/>
+                                                <constraint firstItem="jwK-N3-Oov" firstAttribute="top" secondItem="WYD-iI-SUB" secondAttribute="bottom" constant="4" id="dE6-nf-wd3"/>
+                                                <constraint firstAttribute="trailing" secondItem="WYD-iI-SUB" secondAttribute="trailing" id="h9B-Rd-Luk"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="160" height="200"/>
+                                        <connections>
+                                            <outlet property="image" destination="WYD-iI-SUB" id="2hG-9U-1I4"/>
+                                            <outlet property="label" destination="jwK-N3-Oov" id="ZiX-Vy-lbx"/>
+                                            <outlet property="uiView" destination="4HZ-Ze-Pxy" id="0e6-gS-Q0c"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ZHv-AD-WZ3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WHM-7G-6hr"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -136,6 +200,8 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="categoriesCollectionView" destination="Bg2-Pb-eF4" id="x1w-Rh-iLE"/>
+                        <outlet property="categoryLabel" destination="ZgZ-AV-W4g" id="Ilc-rJ-iBd"/>
+                        <outlet property="mealsCollectionView" destination="Bz5-eE-aX3" id="D6h-97-Tn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yDp-6e-0pF">
-                                <rect key="frame" x="-9" y="59" width="393" height="44"/>
+                                <rect key="frame" x="-12" y="59" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Saved Recipes" largeTitleDisplayMode="always" id="n3b-J2-53l"/>

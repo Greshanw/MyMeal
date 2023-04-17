@@ -20,6 +20,8 @@
 		0E76120729DB299300BACE35 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76120629DB299300BACE35 /* BrowseViewController.swift */; };
 		0E76120929DB514A00BACE35 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76120829DB514A00BACE35 /* SavedViewController.swift */; };
 		0E8CCAFD29EC16F700CFF89C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */; };
+		0E8CCB0729EC382F00CFF89C /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCB0629EC382F00CFF89C /* MealCell.swift */; };
+		0E8CCB0929EC4EBA00CFF89C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCB0829EC4EBA00CFF89C /* Meal.swift */; };
 		0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC545D29DD73AE008D695D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		0E76120629DB299300BACE35 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		0E76120829DB514A00BACE35 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		0E8CCB0629EC382F00CFF89C /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
+		0E8CCB0829EC4EBA00CFF89C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0EAC545D29DD73AE008D695D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,18 +113,18 @@
 		0E3A3C9829D8B07600C4ABF8 /* MyMeal */ = {
 			isa = PBXGroup;
 			children = (
+				0E8CCAFF29EC331300CFF89C /* Views */,
+				0E8CCAFE29EC32D900CFF89C /* Models */,
 				0E3A3C9929D8B07600C4ABF8 /* AppDelegate.swift */,
 				0E3A3C9B29D8B07600C4ABF8 /* SceneDelegate.swift */,
 				0E3A3C9D29D8B07600C4ABF8 /* ViewController.swift */,
 				0E3A3C9F29D8B07600C4ABF8 /* Main.storyboard */,
-				0E20CED429E3C14200527D15 /* category.swift */,
 				0E3A3CA229D8B07800C4ABF8 /* Assets.xcassets */,
 				0E3A3CA429D8B07800C4ABF8 /* LaunchScreen.storyboard */,
 				0E3A3CA729D8B07800C4ABF8 /* Info.plist */,
 				0E76120629DB299300BACE35 /* BrowseViewController.swift */,
 				0E76120829DB514A00BACE35 /* SavedViewController.swift */,
 				0EAC545D29DD73AE008D695D /* SearchViewController.swift */,
-				0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */,
 			);
 			path = MyMeal;
 			sourceTree = "<group>";
@@ -140,6 +144,24 @@
 				0E3A3CBC29D8B07900C4ABF8 /* MyMealUITestsLaunchTests.swift */,
 			);
 			path = MyMealUITests;
+			sourceTree = "<group>";
+		};
+		0E8CCAFE29EC32D900CFF89C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E20CED429E3C14200527D15 /* category.swift */,
+				0E8CCB0829EC4EBA00CFF89C /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E8CCAFF29EC331300CFF89C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */,
+				0E8CCB0629EC382F00CFF89C /* MealCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8CCB0929EC4EBA00CFF89C /* Meal.swift in Sources */,
 				0E20CED529E3C14200527D15 /* category.swift in Sources */,
 				0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */,
 				0E3A3C9E29D8B07600C4ABF8 /* ViewController.swift in Sources */,
+				0E8CCB0729EC382F00CFF89C /* MealCell.swift in Sources */,
 				0E8CCAFD29EC16F700CFF89C /* CategoryCell.swift in Sources */,
 				0E3A3C9A29D8B07600C4ABF8 /* AppDelegate.swift in Sources */,
 				0E76120729DB299300BACE35 /* BrowseViewController.swift in Sources */,
