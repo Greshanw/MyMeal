@@ -73,9 +73,8 @@
                                     <constraint firstAttribute="height" constant="50" id="1SX-jA-JeX"/>
                                 </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-Pb-eF4">
-                                <rect key="frame" x="16" y="117" width="361" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bg2-Pb-eF4">
+                                <rect key="frame" x="16" y="113" width="361" height="104"/>
                                 <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="86C-Vr-BY9">
                                     <size key="itemSize" width="100" height="100"/>
@@ -85,7 +84,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Category" id="3Db-VO-eMZ" customClass="CategoryCell" customModule="MyMeal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="2" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ttp-dz-auC">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -94,7 +93,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iez-NQ-FX8">
                                                     <rect key="frame" x="2" y="75" width="96" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My Meal" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-38-lbM">
@@ -126,12 +125,11 @@
                                 <rect key="frame" x="16" y="225" width="361" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-eE-aX3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bz5-eE-aX3">
                                 <rect key="frame" x="16" y="290" width="361" height="479"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99205952880000003" green="0.94984036679999995" blue="0.84273022409999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z6f-YU-sIg">
                                     <size key="itemSize" width="160" height="200"/>
@@ -157,7 +155,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwK-N3-Oov">
                                                     <rect key="frame" x="4" y="164" width="152" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -192,7 +190,18 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZoS-pu-Vgh" secondAttribute="trailing" id="Ce0-FP-hJ8"/>
                             <constraint firstItem="ZoS-pu-Vgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cum-YG-kp1"/>
                             <constraint firstItem="ZoS-pu-Vgh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MjP-6V-2sp"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U5C-ZS-NvW"/>
+                            <constraint firstItem="ZgZ-AV-W4g" firstAttribute="top" secondItem="Bg2-Pb-eF4" secondAttribute="bottom" constant="8" symbolic="YES" id="U6j-Tt-sLL"/>
+                            <constraint firstItem="Bz5-eE-aX3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Wd3-Gq-Sz3"/>
+                            <constraint firstItem="Bz5-eE-aX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cuy-B9-kxz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bz5-eE-aX3" secondAttribute="trailing" constant="16" id="eER-dO-y8w"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gOQ-Rz-Wnv"/>
+                            <constraint firstItem="Bz5-eE-aX3" firstAttribute="top" secondItem="ZgZ-AV-W4g" secondAttribute="bottom" constant="8" id="gj6-R4-s0m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bg2-Pb-eF4" secondAttribute="trailing" constant="16" id="lAO-SE-bh9"/>
+                            <constraint firstItem="ZoS-pu-Vgh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oUF-5G-GQh"/>
                             <constraint firstItem="ZoS-pu-Vgh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qK0-x2-gHY"/>
+                            <constraint firstItem="Bg2-Pb-eF4" firstAttribute="top" secondItem="ZoS-pu-Vgh" secondAttribute="bottom" constant="4" id="s3U-mO-CFD"/>
+                            <constraint firstItem="Bg2-Pb-eF4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xGs-ZP-Wd3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Browse" id="6aQ-oz-PD7">
