@@ -22,6 +22,7 @@
 		0E8CCAFD29EC16F700CFF89C /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */; };
 		0E8CCB0729EC382F00CFF89C /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCB0629EC382F00CFF89C /* MealCell.swift */; };
 		0E8CCB0929EC4EBA00CFF89C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCB0829EC4EBA00CFF89C /* Meal.swift */; };
+		0EA0B52F29F0F64600617B8F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0B52E29F0F64600617B8F /* RecipeViewController.swift */; };
 		0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC545D29DD73AE008D695D /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		0E8CCAFC29EC16F700CFF89C /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		0E8CCB0629EC382F00CFF89C /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 		0E8CCB0829EC4EBA00CFF89C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0EA0B52E29F0F64600617B8F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		0EAC545D29DD73AE008D695D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				0E3A3CA429D8B07800C4ABF8 /* LaunchScreen.storyboard */,
 				0E3A3CA729D8B07800C4ABF8 /* Info.plist */,
 				0E76120629DB299300BACE35 /* BrowseViewController.swift */,
+				0EA0B52E29F0F64600617B8F /* RecipeViewController.swift */,
 				0E76120829DB514A00BACE35 /* SavedViewController.swift */,
 				0EAC545D29DD73AE008D695D /* SearchViewController.swift */,
 			);
@@ -300,6 +303,7 @@
 				0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */,
 				0E3A3C9E29D8B07600C4ABF8 /* ViewController.swift in Sources */,
 				0E8CCB0729EC382F00CFF89C /* MealCell.swift in Sources */,
+				0EA0B52F29F0F64600617B8F /* RecipeViewController.swift in Sources */,
 				0E8CCAFD29EC16F700CFF89C /* CategoryCell.swift in Sources */,
 				0E3A3C9A29D8B07600C4ABF8 /* AppDelegate.swift in Sources */,
 				0E76120729DB299300BACE35 /* BrowseViewController.swift in Sources */,

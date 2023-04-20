@@ -51,10 +51,11 @@ class BrowseViewController: UIViewController, UICollectionViewDataSource, UIColl
         if(collectionView == self.categoriesCollectionView){
             categoryLabel.text = categories[indexPath.row].strCategory
             loadMeals(category: categories[indexPath.row].strCategory)
+        } else {
+            let vc =  self.storyboard?.instantiateViewController(withIdentifier: "RecipeViewController") as! RecipeViewController
+            vc.mealId = meals[indexPath.row].idMeal
+            self.navigationController?.pushViewController(vc, animated: true)
         }
-//        else {
-//
-//        }
     }
 
     

@@ -8,10 +8,13 @@
 import UIKit
 
 class RecipeViewController: UIViewController {
+    var mealId = ""
 
+    @IBOutlet var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        label.text = mealId
         // Do any additional setup after loading the view.
     }
     
