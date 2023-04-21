@@ -24,6 +24,7 @@
 		0E8CCB0929EC4EBA00CFF89C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CCB0829EC4EBA00CFF89C /* Meal.swift */; };
 		0EA0B52F29F0F64600617B8F /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0B52E29F0F64600617B8F /* RecipeViewController.swift */; };
 		0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAC545D29DD73AE008D695D /* SearchViewController.swift */; };
+		0ECB5F0329F2E12A00ACAE54 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB5F0229F2E12A00ACAE54 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		0E8CCB0829EC4EBA00CFF89C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		0EA0B52E29F0F64600617B8F /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		0EAC545D29DD73AE008D695D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0ECB5F0229F2E12A00ACAE54 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				0E20CED429E3C14200527D15 /* category.swift */,
 				0E8CCB0829EC4EBA00CFF89C /* Meal.swift */,
+				0ECB5F0229F2E12A00ACAE54 /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				0E8CCB0929EC4EBA00CFF89C /* Meal.swift in Sources */,
 				0E20CED529E3C14200527D15 /* category.swift in Sources */,
 				0EAC545E29DD73AF008D695D /* SearchViewController.swift in Sources */,
+				0ECB5F0329F2E12A00ACAE54 /* Recipe.swift in Sources */,
 				0E3A3C9E29D8B07600C4ABF8 /* ViewController.swift in Sources */,
 				0E8CCB0729EC382F00CFF89C /* MealCell.swift in Sources */,
 				0EA0B52F29F0F64600617B8F /* RecipeViewController.swift in Sources */,
